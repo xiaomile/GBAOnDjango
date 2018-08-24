@@ -33,7 +33,7 @@ IodineGBAWorkerShim.prototype.initialize = function () {
     var parentObj = this;
     var loc = this.filepath.split("/");
     loc = loc.slice(0, loc.length - 2).join("/");
-    loc += "/IodineGBA/core/Worker.js";
+    loc += "../static/IodineGBA/core/Worker.js";
     this.worker = new Worker(loc);
     this.worker.onmessage = function (event) {
         parentObj.decodeMessage(event.data);

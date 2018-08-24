@@ -39,15 +39,18 @@
      try {
          if (typeof WorkerGlobalScope === 'undefined' || !(self instanceof WorkerGlobalScope)) {
              //Use the catch block:
+			 console.log(loc);
              throw null;
          }
          //Firefox:
          var loc2 = loc + "/graphics/Worker.js";
+		 
          this.worker = new Worker(loc2);
      }
      catch (e) {
          //Google Chrome:
-         var loc3 = loc + "/IodineGBA/core/graphics/Worker.js";
+		 alert(e);
+         var loc3 = loc + "../static/IodineGBA/core/graphics/Worker.js";
          this.worker = new Worker(loc3);
      }
      this.worker.postMessage({

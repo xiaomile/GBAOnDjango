@@ -59,7 +59,7 @@ function registerGUIEvents() {
     addEvent("change", document.getElementById("speedset"), speedChangeFunc);
     addEvent("input", document.getElementById("speedset"), speedChangeFunc);
     addEvent("click", document.getElementById("fullscreen"), toggleFullScreen);
-    addEvent("click", document.getElementById("key_a"), function () {
+    addEvent("click", document.getElementById("touch-a"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 0;
     });
@@ -69,7 +69,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-a"), function () {
         IodineGUI.Iodine.keyUp(0);
     });
-    addEvent("click", document.getElementById("key_b"), function () {
+    addEvent("click", document.getElementById("touch-b"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 1;
     });
@@ -79,7 +79,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-b"), function () {
         IodineGUI.Iodine.keyUp(1);
     });
-    addEvent("click", document.getElementById("key_select"), function () {
+    addEvent("click", document.getElementById("touch-select"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 2;
     });
@@ -89,7 +89,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-select"), function () {
         IodineGUI.Iodine.keyUp(2);
     });
-    addEvent("click", document.getElementById("key_start"), function () {
+    addEvent("click", document.getElementById("touch-start"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 3;
     });
@@ -99,7 +99,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-start"), function () {
         IodineGUI.Iodine.keyUp(3);
     });
-    addEvent("click", document.getElementById("key_right"), function () {
+    addEvent("click", document.getElementById("touch-right"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 4;
     });
@@ -109,7 +109,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-right"), function () {
         IodineGUI.Iodine.keyUp(4);
     });
-    addEvent("click", document.getElementById("key_left"), function () {
+    addEvent("click", document.getElementById("touch-left"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 5;
     });
@@ -119,7 +119,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-left"), function () {
         IodineGUI.Iodine.keyUp(5);
     });
-    addEvent("click", document.getElementById("key_up"), function () {
+    addEvent("click", document.getElementById("touch-up"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 6;
     });
@@ -129,7 +129,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-up"), function () {
         IodineGUI.Iodine.keyUp(6);
     });
-    addEvent("click", document.getElementById("key_down"), function () {
+    addEvent("click", document.getElementById("touch-down"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 7;
     });
@@ -139,7 +139,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-down"), function () {
         IodineGUI.Iodine.keyUp(7);
     });
-    addEvent("click", document.getElementById("key_r"), function () {
+    addEvent("click", document.getElementById("touch-r"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 8;
     });
@@ -149,7 +149,7 @@ function registerGUIEvents() {
     addEvent("mouseup", document.getElementById("touch-r"), function () {
         IodineGUI.Iodine.keyUp(8);
     });
-    addEvent("click", document.getElementById("key_l"), function () {
+    addEvent("click", document.getElementById("touch-l"), function () {
         IodineGUI.toMap = IodineGUI.defaults.keyZonesGBA;
         IodineGUI.toMapIndice = 9;
     });
